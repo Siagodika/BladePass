@@ -1,108 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>BladePass</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-    body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-        background: #0a0a0a;
-        color: #eaeaea;
-        line-height: 1.6;
-    }
-    .container {
-        max-width: 900px;
-        margin: auto;
-        padding: 60px 20px;
-    }
-    h1, h2 {
-        font-weight: 500;
-        letter-spacing: -0.02em;
-    }
-    h1 {
-        font-size: 48px;
-        margin-bottom: 20px;
-    }
-    h2 {
-        margin-top: 60px;
-        font-size: 24px;
-        color: #999;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-    }
-    p {
-        color: #bbb;
-        font-size: 18px;
-    }
-    .hero {
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .tagline {
-        font-size: 22px;
-        color: #888;
-    }
-    .cta {
-        margin-top: 30px;
-    }
-    button {
-        background: transparent;
-        color: white;
-        border: 1px solid #444;
-        padding: 12px 24px;
-        cursor: pointer;
-        font-size: 14px;
-    }
-    button:hover {
-        border-color: white;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BladePass | Curated Surgical Access</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #f4f4f4; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    </style>
 </head>
-
 <body>
 
-<div class="container hero">
-    <h1>BladePass</h1>
-    <p class="tagline">Access is opened, not granted.</p>
-    <div class="cta">
-        <button>Request Access</button>
-    </div>
-</div>
+    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
+        <div class="text-2xl font-bold tracking-tighter uppercase">BladePass</div>
+        <div class="space-x-8 text-sm uppercase tracking-widest text-gray-400">
+            <a href="#mission" class="hover:text-white transition">Mission</a>
+            <a href="#access" class="hover:text-white transition">Access</a>
+            <a href="#expert" class="hover:text-white transition">The Expert</a>
+        </div>
+    </nav>
 
-<div class="container">
-    <h2>Concept</h2>
-    <p>
-        BladePass provides curated access to real surgical experiences.
-        It is a threshold between observation and participation.
-    </p>
+    <header class="py-24 px-6 text-center max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-7xl font-light mb-6 tracking-tight">
+            Access is <span class="italic">opened</span>, not granted.
+        </h1>
+        <p class="text-xl text-gray-400 font-light leading-relaxed mb-10">
+            A global institution for elite surgical observership. Beyond simulation. Beyond theory.
+        </p>
+        <div class="flex justify-center gap-4">
+            <button class="bg-white text-black px-8 py-4 font-semibold uppercase text-xs tracking-widest hover:bg-gray-200 transition">
+                Request Membership
+            </button>
+        </div>
+    </header>
 
-    <h2>Problem</h2>
-    <p>
-        Access to real surgical expertise is limited by geography, cost, and institutional barriers.
-        Existing education is often theoretical, edited, and disconnected from reality.
-    </p>
+    <section id="access" class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-3 gap-8">
+        <div class="glass p-8">
+            <h3 class="text-xs uppercase tracking-widest text-blue-400 mb-4 font-bold">01. The Observership</h3>
+            <p class="text-gray-300">Direct access to real-time decision-making, intraoperative strategy, and complication management.</p>
+        </div>
+        <div class="glass p-8">
+            <h3 class="text-xs uppercase tracking-widest text-blue-400 mb-4 font-bold">02. The Network</h3>
+            <p class="text-gray-300">A vetted society of senior surgeons and fellows focused on clinical excellence and professional status.</p>
+        </div>
+        <div class="glass p-8">
+            <h3 class="text-xs uppercase tracking-widest text-blue-400 mb-4 font-bold">03. The Framework</h3>
+            <p class="text-gray-300">Fully compliant, anonymized, and ethically structured remote learning environment.</p>
+        </div>
+    </section>
 
-    <h2>Solution</h2>
-    <p>
-        BladePass enables structured observership through real surgeries,
-        focusing on decisions, strategy, and intraoperative thinking.
-    </p>
+    <section id="expert" class="max-w-7xl mx-auto px-6 py-20 border-t border-white/10">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="bg-gray-800 aspect-[4/5] w-full max-w-md mx-auto overflow-hidden">
+                <img src="expert_placeholder.jpg" alt="Expert Surgeon" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+            </div>
+            <div>
+                <h2 class="text-4xl font-light mb-6">Built on Authority.</h2>
+                <p class="text-gray-400 mb-6 leading-relaxed">
+                    BladePass is not a content marketplace. It is an authority-driven project led by surgeons for surgeons. We focus on the <span class="text-white font-medium">Why</span>, not just the What.
+                </p>
+                <ul class="space-y-4 text-sm text-gray-300">
+                    <li>• Board-certified expertise</li>
+                    <li>• Specialized focus (Hand & Wrist)</li>
+                    <li>• Global professional faculty</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-    <h2>Audience</h2>
-    <p>
-        Built for board-certified surgeons, subspecialists, and senior fellows seeking refinement.
-    </p>
-
-    <h2>Position</h2>
-    <p>
-        This is not a content platform.
-        It is an access system built on authority.
-    </p>
-</div>
+    <footer class="py-10 text-center text-xs text-gray-600 uppercase tracking-[0.2em]">
+        &copy; 2026 BladePass. All Rights Reserved.
+    </footer>
 
 </body>
 </html>
